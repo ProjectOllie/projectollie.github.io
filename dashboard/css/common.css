@@ -458,6 +458,8 @@ img {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
+	height: 200px;
+	width: auto;
 }
 #Visual .info .info-right {
 	padding: 0 0 0 215px;

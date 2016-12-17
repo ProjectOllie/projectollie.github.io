@@ -61,8 +61,8 @@ $(document).ready(function(){
     });
 
     //Conect
-    $('.streamer-screen .conect-chanel .conimg').click(function(e) {
-      $(this).parents('.block-competition').addClass('conect-success');
+    $('.streamer-screen .conect-chanel .conimg').click(function(e) {      
+      $(this).parents('.block-competition').addClass('conect-success');      
     });
     //Connect viewer
     

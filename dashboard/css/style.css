@@ -230,11 +230,13 @@
 	transform: scale(1.1);
 }
 #Content .block-competition .img-competition .competition-name {
+	background: url('../images/bg_mask.png') repeat-x left bottom;
 	position: absolute;
 	left: 0;
-	bottom: 6px;
+	bottom: 0;
 	width: 100%;
 	font-size: 18px;
+	padding: 30px 0 6px 0;
 	color: #fff;
 	text-align: center;
 	font-family: 'gotham_boldregular';
@@ -345,7 +347,7 @@
   cursor: pointer;
 }
 .dialog_title {
-  font-size: 14px;
+  font-size: 13px;
   color: #CED3DC;
   padding: 5px;
   border-bottom: 1px solid #ddd;
@@ -354,7 +356,7 @@
 .dialog_title span {
   display:inline-block;
   vertical-align: middle;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   font-size: 18px;
   color: black;
 }
