@@ -15,7 +15,6 @@ img {
 	height: auto;
 }
 
-
 /*-------------------------
 	COMMON
 ---------------------------*/
@@ -940,7 +939,7 @@ img {
 #Pagetop {
 	position: fixed;
 	right: 15px;
-	bottom: 100px;
+	bottom: 60px;
 	display: none;
 }
 #Pagetop a {
@@ -989,4 +988,18 @@ img {
 
 @media screen and (max-width: 767px){
 	
+}
+form {margin: 0;}
+
+@media screen and (min-width: 700px){
+	#Content .block-section .congrat .ttl-congrat {
+		font-size: 19px;
+}
+	body {
+	font-size: 13px;
+}
+#Content .block-section .block-list .m-title {
+    font-size: 12px;
+    }
+
 }
