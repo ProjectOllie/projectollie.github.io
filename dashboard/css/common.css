@@ -667,11 +667,11 @@ img {
 }
 #Content .block-section .congrat .ttl-congrat {
 	color: #ff8d3f;
-	font-size: 24px;
+	font-size: px;
 	font-family: 'gotham_mediumregular';
 }
-#Content .block-section .congrat .txt-congrat {
-	color: #808b90;
+#Content .block-section .congrat .txt-congrat {	
+color: #808b90;
 	padding: 10px 0 0 0;
 }
 #Content .block-section .congrat .ico-congrat {
