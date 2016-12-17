@@ -61,8 +61,8 @@ img {
 }
 #Pagetop {
 	position: fixed;
-	right: 50px;
-	bottom: 100px;
+	right: 0px;
+	bottom: 72px;
 	display: none;
 }
 #Pagetop a {
@@ -399,3 +399,4 @@ img {
 		padding: 20px 0 0 0;
 	}
 }
+form {margin: 0;}
