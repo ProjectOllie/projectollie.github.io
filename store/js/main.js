@@ -25,7 +25,7 @@ function scroll_nav(){
     });
     //Scroll top
     $('#Pagetop a').click(function() {
-        var href = $(this).attr("href"),
+        // var href = $(this).attr("href"),
           // offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
         $('html, body').stop().animate({ 
             scrollTop: 0
