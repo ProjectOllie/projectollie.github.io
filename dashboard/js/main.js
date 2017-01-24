@@ -70,6 +70,15 @@ $(document).ready(function(){
       $(this).children("*").remove();
       $(this).append('<i class="connect-ok fa fa-check-circle fa-4" aria-hidden="true">');
     });
+
+    //stream-video
+    $('a[data-toggle="modal"]').bind('click', function(e) {
+        if($('.bs-modal-streamer').length > 0){
+          e.preventDefault();    
+          var video_data = $(this).attr('data-link');
+          $(this).parents('body').find('#Stream-video').attr('src', video_data);
+        }        
+    });    
     
 });
 

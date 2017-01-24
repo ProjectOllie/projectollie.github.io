@@ -138,6 +138,23 @@ img {
 .modal table td a:hover {
 	color: #ff8d3f;
 }
+.modal-backdrop.fade {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.h_iframe {position:relative;}
+.h_iframe .ratio {
+	display:block;
+	width:100%;
+	height:auto;
+}
+.h_iframe iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 .alert {
 	display: none;
 	position: fixed;
@@ -943,6 +960,7 @@ color: #808b90;
 	right: 15px;
 	bottom: 60px;
 	display: none;
+	z-index: 9999;
 }
 #Pagetop a {
 	background: #ff8d3f;

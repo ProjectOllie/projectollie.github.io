@@ -1,0 +1,101 @@
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Oliver</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/fonts.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/w3data.js"></script>
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="Header">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/common/logo.png" alt=""></a>
+						<!-- <p class="log"><a href="#">Login</a></p> -->
+						<div class="dropdown log">
+						  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Login
+						    <!-- <span class="caret"></span> -->
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dLabel">
+						    <li><a href="dashboard/streamer.html"><img src="images/icon/ico_phone.png" alt=""><span>BROADCASTER</span></a></li>
+						    <li><a href="dashboard/viewer.html"><img src="images/icon/ico_viewer.png" alt=""><span>VIEWER</span></a></li>
+						  </ul>
+						</div>
+					</div>
+			
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">	
+					<a href="#Mainvisual" style="display:none"></a>					
+						<ul class="nav navbar-nav">
+							<li class=""><a href="/">Home</a></li>
+							<li class=""><a href="#Faq">FAQ</a></li>
+						</ul>						
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</header><!-- Header -->
+		
+		<article id="Content">
+			
+			<div w3-include-html="index_frame.html"></div> 
+			
+		</article><!-- Content -->
+
+		<footer id="Footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<p id="Copyright">
+							<span>ProjectOliver (C) 2016 </span>
+							<a href="#">- Terms of Service</a>
+							<a href="#">- Privacy policy</a>
+						</p>
+					</div>
+
+					<div class="col-sm-6">
+						<ul class="social-list">
+							<li><a href="#"><img src="images/icon/ico_fb.png" alt=""></a></li>
+							<li><a href="#"><img src="images/icon/ico_twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="images/icon/ico_twitch.png" alt=""></a></li>
+							<li><a href="#"><img src="images/icon/ico_istagram.png" alt=""></a></li>
+							<li><a href="#"><img src="images/icon/ico_youtube.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer><!-- Footer -->
+		<p id="Pagetop" style="display: none;"><a href="#Mainvisual"><i class="fa fa-angle-up" aria-hidden="true"></i></a></p>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>		
+		<script> w3IncludeHTML(); </script>
+
+</body>
+</html>

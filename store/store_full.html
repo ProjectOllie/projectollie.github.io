@@ -1,0 +1,890 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 " lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="en"><![endif]-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"fddcb76d89ff647e1f871e6116901b7b",petok:"ede227d23993180c7c680cf37b5c090e93f365e1-1485160441-1800",zone:"template-help.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=f2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<title>Mobile</title>
+<meta name="description" content="Shop powered by PrestaShop"/>
+<meta name="generator" content="PrestaShop"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="icon" type="image/vnd.microsoft.icon" href="/prestashop_51309/img/favicon.ico?1410964301"/>
+<link rel="shortcut icon" type="image/x-icon" href="/prestashop_51309/img/favicon.ico?1410964301"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="css/global.css" media="all"/>
+<link rel="stylesheet" href="css/autoload/highdpi.css" media="all"/>
+<link rel="stylesheet" href="css/autoload/responsive-tables.css" media="all"/>
+<link rel="stylesheet" href="css/autoload/uniform.default.css" media="all"/>
+<link rel="stylesheet" href="js/jquery/plugins/fancybox/jquery.fancybox.css" media="all"/>
+<link rel="stylesheet" href="css/product_list.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockcart/blockcart.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockcategories/blockcategories.css" media="all"/>
+<link rel="stylesheet" href="modules/blockfacebook/css/blockfacebook.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockcontact/blockcontact.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blocknewsletter/blocknewsletter.css" media="all"/>
+<link rel="stylesheet" href="js/jquery/plugins/autocomplete/jquery.autocomplete.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blocksearch/blocksearch.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blocktags/blocktags.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockuserinfo/blockuserinfo.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockviewed/blockviewed.css" media="all"/>
+<link rel="stylesheet" href="css/modules/homeslider/homeslider.css" media="all"/>
+<link rel="stylesheet" href="css/modules/themeconfigurator/css/hooks.css" media="all"/>
+<link rel="stylesheet" href="css/modules/themeconfigurator/css/live_configurator.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockwishlist/blockwishlist.css" media="all"/>
+<link rel="stylesheet" href="css/modules/productcomments/productcomments.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all"/>
+<link rel="stylesheet" href="modules/themeconfiglink/themeconfiglink.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blocktopmenu/css/blocktopmenu.css" media="all"/>
+<link rel="stylesheet" href="css/modules/blocktopmenu/css/superfish-modified.css" media="all"/>
+<script type="text/javascript">
+var CUSTOMIZE_TEXTFIELD = 1;
+var FancyboxI18nClose = 'Close';
+var FancyboxI18nNext = 'Next';
+var FancyboxI18nPrev = 'Previous';
+var added_to_wishlist = 'Added to your wishlist.';
+var ajax_allowed = true;
+var ajaxsearch = true;
+var baseDir = 'https://livedemo00.template-help.com/prestashop_51309/';
+var baseUri = 'https://livedemo00.template-help.com/prestashop_51309/index.php';
+var blocksearch_type = 'top';
+var comparator_max_item = 2;
+var comparedProductsIds = [];
+var contentOnly = false;
+var customizationIdMessage = 'Customization #';
+var delete_txt = 'Delete';
+var displayList = false;
+var freeProductTranslation = 'Free!';
+var freeShippingTranslation = 'Free shipping!';
+var generated_date = 1485160441;
+var homeslider_loop = 1;
+var homeslider_pause = 3000;
+var homeslider_speed = 500;
+var homeslider_width = 770;
+var id_lang = 1;
+var img_dir = 'https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/img/';
+var instantsearch = true;
+var isGuest = 0;
+var isLogged = 0;
+var loggin_required = 'You must be logged in to manage your wishlist.';
+var max_item = 'You cannot add more than 2 product(s) to the product comparison';
+var min_item = 'Please select at least one product';
+var mywishlist_url = 'https://livedemo00.template-help.com/prestashop_51309/index.php?fc=module&module=blockwishlist&controller=mywishlist&id_lang=1';
+var nbItemsPerLine = 4;
+var nbItemsPerLineMobile = 2;
+var nbItemsPerLineTablet = 3;
+var page_name = 'index';
+var placeholder_blocknewsletter = 'Enter your e-mail';
+var priceDisplayMethod = 1;
+var priceDisplayPrecision = 2;
+var quickView = true;
+var removingLinkText = 'remove this product from my cart';
+var roundMode = 2;
+var search_url = 'https://livedemo00.template-help.com/prestashop_51309/index.php?controller=search';
+var static_token = 'eacd2fcb48f0f2d4ea7a9883d7345d5f';
+var token = '5ccc861def48054e83b13435ae68f30b';
+var usingSecureMode = false;
+var wishlistProductsIds = false;
+</script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/jquery.easing.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/tools.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/global.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/autoload/10-bootstrap.min.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/autoload/15-jquery.total-storage.min.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/autoload/15-jquery.uniform-modified.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/products-comparison.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blockcart/ajax-cart.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/jquery.serialScroll.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/tools/treeManagement.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/modules/blockfacebook/blockfacebook.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blocknewsletter/blocknewsletter.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/js/jquery/plugins/autocomplete/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blocksearch/blocksearch.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/homeslider/js/homeslider.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/js/live_configurator.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blockwishlist/js/ajax-wishlist.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blocktopmenu/js/hoverIntent.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blocktopmenu/js/superfish-modified.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
+<script type="text/javascript" src="https://livedemo00.template-help.com/prestashop_51309/themes/theme1040/js/index.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext,cyrillic-ext" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,100italic,100,300,400italic,300italic,700,700italic,900,900italic&subset=latin,latin-ext" type="text/css" media="all"/>
+<!--[if IE 8]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="index" class="index hide-left-column hide-right-column lang_en">
+<!--[if IE 8]>
+        <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
+    <![endif]-->
+<div id="page">
+  <div class="header-container">
+    <header id="header">
+      <div class="banner">
+        <div class="container">
+          <div class="row"> </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <div class="row">
+            <nav></nav>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container">
+          <div class="row">
+            <div id="header_logo"> <a href="https://livedemo00.template-help.com/prestashop_51309/" title="Mobile"> <img class="logo img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/new-store-1410185304.jpg" alt="Mobile" width="279" height="60"/> </a> </div>
+            <div id="search_block_top" class="col-sm-4 clearfix">
+              <form id="searchbox" method="get" action="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=search">
+                <input type="hidden" name="controller" value="search"/>
+                <input type="hidden" name="orderby" value="position"/>
+                <input type="hidden" name="orderway" value="desc"/>
+                <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Search" value=""/>
+                <button type="submit" name="submit_search" class="btn btn-default button-search"> <span>Search</span> </button>
+              </form>
+            </div>
+            
+            
+            
+            <div class="">
+              <div class="shopping_cart"> <a href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=order-opc" title="View my shopping cart" rel="nofollow"> <b>Cart</b> <span class="ajax_cart_quantity unvisible">0</span> <span class="ajax_cart_product_txt unvisible">Product</span> <span class="ajax_cart_product_txt_s unvisible">Products</span> <span class="ajax_cart_total unvisible"> </span> <span class="ajax_cart_no_product">0</span> </a>
+                <div class="cart_block block">
+                  <div class="block_content">
+                    <div class="cart_block_list">
+                      <p class="cart_block_no_products"> No products </p>
+                      <div class="cart-prices">
+                        <div class="cart-prices-line first-line"> <span class="price cart_block_shipping_cost ajax_cart_shipping_cost"> Free shipping! </span> <span> Shipping </span> </div>
+                        <div class="cart-prices-line last-line"> <span class="price cart_block_total ajax_block_cart_total">$0.00</span> <span>Total</span> </div>
+                      </div>
+                      <p class="cart-buttons"> <a id="button_order_cart" class="btn btn-default btn-sm icon-right" href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=order-opc" title="Check out" rel="nofollow"> <span> Check out </span> </a> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="layer_cart">
+              <div class="clearfix">
+                <div class="layer_cart_product col-xs-12 col-md-6"> <span class="cross" title="Close window"></span>
+                  <h2> <i class="fa fa-ok"></i> Product successfully added to your shopping cart </h2>
+                  <div class="product-image-container layer_cart_img"> </div>
+                  <div class="layer_cart_product_info"> <span id="layer_cart_product_title" class="product-name"></span> <span id="layer_cart_product_attributes"></span>
+                    <div> <strong class="dark">Quantity</strong> <span id="layer_cart_product_quantity"></span> </div>
+                    <div> <strong class="dark">Total</strong> <span id="layer_cart_product_price"></span> </div>
+                  </div>
+                </div>
+                <div class="layer_cart_cart col-xs-12 col-md-6">
+                  <h2> <span class="ajax_cart_product_txt_s  unvisible"> There are <span class="ajax_cart_quantity">0</span> items in your cart. </span> <span class="ajax_cart_product_txt "> There is 1 item in your cart. </span> </h2>
+                  <div class="layer_cart_row"> <strong class="dark"> Total products </strong> <span class="ajax_block_products_total"> </span> </div>
+                  <div class="layer_cart_row"> <strong class="dark"> Total shipping&nbsp; </strong> <span class="ajax_cart_shipping_cost"> Free shipping! </span> </div>
+                  <div class="layer_cart_row"> <strong class="dark"> Total </strong> <span class="ajax_block_cart_total"> </span> </div>
+                  <div class="button-container"> <span class="continue btn btn-default btn-md icon-left" title="Continue shopping"> <span> Continue shopping </span> </span> <a class="btn btn-default btn-md icon-right" href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=order-opc" title="Proceed to checkout" rel="nofollow"> <span> Proceed to checkout </span> </a> </div>
+                </div>
+              </div>
+              <div class="crossseling"></div>
+            </div>
+            <div class="layer_cart_overlay"></div>
+            <ul class="user_info">
+              <li> <a href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=my-account" title="View my customer account" rel="nofollow"> Your Account </a> </li>
+              <li> <a class="login" href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=my-account" rel="nofollow" title="Login to your customer account"> Sign in </a> </li>
+            </ul>
+            <div id="block_top_menu" class="sf-contener clearfix col-lg-12">
+              <div class="cat-title">Categories</div>
+              <ul class="sf-menu clearfix menu-content">
+                <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=3&amp;controller=category&amp;id_lang=1" title="Mobile phones">Mobile phones</a>
+                  <ul>
+                    <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=4&amp;controller=category&amp;id_lang=1" title="Aliquam congue">Aliquam congue</a>
+                      <ul>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=5&amp;controller=category&amp;id_lang=1" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=6&amp;controller=category&amp;id_lang=1" title="Sit amet conse">Sit amet conse</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=7&amp;controller=category&amp;id_lang=1" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=8&amp;controller=category&amp;id_lang=1" title="Sed do eiusmod">Sed do eiusmod</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=9&amp;controller=category&amp;id_lang=1" title="Tempor incididunt ut">Tempor incididunt ut</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=10&amp;controller=category&amp;id_lang=1" title="Labore et dolore">Labore et dolore</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=11&amp;controller=category&amp;id_lang=1" title="Pellentesque sed">Pellentesque sed</a>
+                      <ul>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=12&amp;controller=category&amp;id_lang=1" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=13&amp;controller=category&amp;id_lang=1" title="Sit amet conse">Sit amet conse</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=14&amp;controller=category&amp;id_lang=1" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=15&amp;controller=category&amp;id_lang=1" title="Sed do eiusmod">Sed do eiusmod</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=16&amp;controller=category&amp;id_lang=1" title="Tempor incididunt ut">Tempor incididunt ut</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=17&amp;controller=category&amp;id_lang=1" title="Labore et dolore">Labore et dolore</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=18&amp;controller=category&amp;id_lang=1" title="Enim adipiscing">Enim adipiscing</a>
+                      <ul>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=19&amp;controller=category&amp;id_lang=1" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=20&amp;controller=category&amp;id_lang=1" title="Sit amet conse">Sit amet conse</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=21&amp;controller=category&amp;id_lang=1" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=22&amp;controller=category&amp;id_lang=1" title="Sed do eiusmod">Sed do eiusmod</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=23&amp;controller=category&amp;id_lang=1" title="Tempor incididunt ut">Tempor incididunt ut</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=24&amp;controller=category&amp;id_lang=1" title="Labore et dolore">Labore et dolore</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=25&amp;controller=category&amp;id_lang=1" title="Aliquet sit amet">Aliquet sit amet</a>
+                      <ul>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=26&amp;controller=category&amp;id_lang=1" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=27&amp;controller=category&amp;id_lang=1" title="Sit amet conse">Sit amet conse</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=28&amp;controller=category&amp;id_lang=1" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=29&amp;controller=category&amp;id_lang=1" title="Sed do eiusmod">Sed do eiusmod</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=30&amp;controller=category&amp;id_lang=1" title="Tempor incididunt ut">Tempor incididunt ut</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=31&amp;controller=category&amp;id_lang=1" title="Labore et dolore">Labore et dolore</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=32&amp;controller=category&amp;id_lang=1" title="Phasellus">Phasellus</a>
+                      <ul>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=33&amp;controller=category&amp;id_lang=1" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=34&amp;controller=category&amp;id_lang=1" title="Sit amet conse">Sit amet conse</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=35&amp;controller=category&amp;id_lang=1" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=36&amp;controller=category&amp;id_lang=1" title="Sed do eiusmod">Sed do eiusmod</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=37&amp;controller=category&amp;id_lang=1" title="Tempor incididunt ut">Tempor incididunt ut</a></li>
+                        <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=38&amp;controller=category&amp;id_lang=1" title="Labore et dolore">Labore et dolore</a></li>
+                      </ul>
+                    </li>
+                    <li class="category-thumbnail"></li>
+                  </ul>
+                </li>
+                <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=39&amp;controller=category&amp;id_lang=1" title="Smartphones">Smartphones</a></li>
+                <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=40&amp;controller=category&amp;id_lang=1" title="Communicators">Communicators</a></li>
+                <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=41&amp;controller=category&amp;id_lang=1" title="CDMA Phones">CDMA Phones</a></li>
+                <li><a href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_category=42&amp;controller=category&amp;id_lang=1" title="Mobile Chargers">Mobile Chargers</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="columns-container">
+    <div class="wrap_top_column">
+      <div id="columns" class="container">
+        <div class="inner_columns">
+          <div id="slider_row" class="row">
+            <div id="top_column" class="center_column col-xs-12">
+              <div id="homepage-slider" class="col-xs-6">
+                <ul id="homeslider" style="max-height:584px;">
+                  <li class="homeslider-container"> <a href="index.php?id_category=5&amp;controller=category" title="sample-1"> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/homeslider/images/f15a4323e750b621e15c94ff85e94226b7168783_slide1.jpg" width="585" height="584" alt="sample-1"/> </a>
+                    <div class="homeslider-description">
+                      <div class="bg-desc"> </div>
+                      <div class="wrap-desc">
+                        <h2>The new HTC One M8</h2>
+                        <h4>from</h4>
+                        <p class="price">$689</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="homeslider-container"> <a href="index.php?id_category=4&amp;controller=category" title="sample-2"> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/homeslider/images/0274569da5bd54985802590bbaa8134f83ee04c6_slide2.jpg" width="585" height="584" alt="sample-2"/> </a>
+                    <div class="homeslider-description">
+                      <div class="bg-desc"> </div>
+                      <div class="wrap-desc">
+                        <h2>Nokia Lumia 820</h2>
+                        <h4>from</h4>
+                        <p class="price">$489</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="homeslider-container"> <a href="index.php?id_category=3&amp;controller=category" title="sample-3"> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/homeslider/images/b8746cd73f7f146f408392843dde077ae1e52f9b_slide3.jpg" width="585" height="584" alt="sample-3"/> </a>
+                    <div class="homeslider-description">
+                      <div class="bg-desc"> </div>
+                      <div class="wrap-desc">
+                        <h2>nexus 5</h2>
+                        <h4>from</h4>
+                        <p class="price">$589</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="htmlcontent_top">
+                <ul class="htmlcontent-home ">
+                  <li class="htmlcontent-item-1  col-xs-6"> <a href="index.php?id_category=3&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/5973ef06b26ad411a4d0d3ae7a31baa685928960_baner1.png" class="item-img" title="" alt="" width="585" height="292"/>
+                    <div class="item-html">
+                      <h2>The Samsung<br>
+                        Galaxy S5</h2>
+                      <strong>from</strong> <span>$789</span> </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-2  col-xs-6"> <a href="index.php?id_category=4&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/327613836aa224d6385057fa138d1bfdcd479efa_baner2.png" class="item-img" title="" alt="" width="585" height="292"/>
+                    <div class="item-html"> <span>-25%</span>
+                      <div>
+                        <h2>nokia<br>
+                          LUMIA 525</h2>
+                        <strong>from</strong> <span>$289</span> </div>
+                    </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-3  col-xs-6"> <a href="index.php?id_category=5&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/f250a2adaf8ff41e37e64e79ccff044f67635bcb_baner3.png" class="item-img" title="" alt="" width="585" height="292"/>
+                    <div class="item-html">
+                      <h2>nokia<br>
+                        LUMIA 930</h2>
+                      <strong>from</strong> <span>$389</span> </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-4  col-xs-6"> <a href="index.php?id_category=6&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/88db6dd9ca811df86e4a3252829cc4a49f81cf54_baner4.png" class="item-img" title="" alt="" width="292" height="582"/>
+                    <div class="item-html">
+                      <h2>Apple <br>
+                        iPhone 5c</h2>
+                      <strong>from</strong> <span>$789</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="btn">Shop now!</p>
+                    </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-5  col-xs-6"> <a href="index.php?id_category=7&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/73a05c15ef5df4685d8160db73ccf9b1622052f8_baner5.png" class="item-img" title="" alt="" width="293" height="292"/>
+                    <div class="item-html">
+                      <h2>Sony<br>
+                        Xperia Z1</h2>
+                      <strong>from</strong> <span>$489</span> </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-6  col-xs-6"> <a href="index.php?id_category=8&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/1371e7ca7032d24f8343542b4059a0848dd55ad3_baner6.png" class="item-img" title="" alt="" width="293" height="292"/>
+                    <div class="item-html">
+                      <h2>LG L65</h2>
+                      <strong>from</strong> <span>$789</span> </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-7  col-xs-6"> <a href="index.php?id_category=9&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/f335aa5fe1c329bb149b9546edf0339be611b622_baner7-8.png" class="item-img" title="" alt="" width="293" height="292"/>
+                    <div class="item-html"> <em class="fa fa-truck"></em>
+                      <h2>Free Shipping</h2>
+                      <p>Lorem ipsum dolor sit amet conse ctetur
+                        adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                    </a> </li>
+                  <li class="htmlcontent-item-8  col-xs-6"> <a href="index.php?id_category=10&amp;controller=category" class="item-link" title=""> <img src="https://livedemo00.template-help.com/prestashop_51309/modules/themeconfigurator/img/21136af3710c95ea18b58c85582c07a96341e988_baner7-8.png" class="item-img" title="" alt="" width="293" height="292"/>
+                    <div class="item-html"> <em class="fa fa-mobile"></em>
+                      <h2>New Arrivals</h2>
+                      <p>Lorem ipsum dolor sit amet conse ctetur
+                        adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                    </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="columns" class="container">
+      <div class="inner_columns">
+        <div class="row">
+          <div id="center_column" class="center_column col-xs-12 col-sm-12">
+            <ul id="home-page-tabs" class="nav nav-tabs clearfix">
+              <li><a data-toggle="tab" href="#homefeatured" class="homefeatured">Popular</a></li>
+              <li><a data-toggle="tab" href="#blocknewproducts" class="blocknewproducts">New arrivals</a></li>
+              <li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">Best Sellers</a></li>
+            </ul>
+            <div class="tab-content">
+              <ul id="homefeatured" class="product_list grid row homefeatured tab-pane">
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="Nokia Wireless Charging Pillow" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/3/93-tm_home_default.jpg" alt="Nokia Wireless Charging Pillow" title="Nokia Wireless Charging Pillow" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $214.25 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="Nokia Wireless Charging Pillow" itemprop="url"> <span class="list-name">Nokia Wireless Charging Pillow</span> <span class="grid-name">Nokia Wireless Charging Pillow</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="19"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/0/90-tm_home_default.jpg" alt="Nokia Wireless Charging Cover for Lumia 1020" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $196.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="url"> <span class="list-name">Nokia Wireless Charging Cover for Lumia 1020</span> <span class="grid-name">Nokia Wireless Charging Cover for Lumia 1020</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="18"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="iPhone 5S" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/2/12-tm_home_default.jpg" alt="iPhone 5S" title="iPhone 5S" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $196.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="iPhone 5S" itemprop="url"> <span class="list-name">iPhone 5S</span> <span class="grid-name">iPhone 5S</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <span class="ajax_add_to_cart_button btn btn-default disabled"> <span>Add to cart</span> </span>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="out-of-stock">
+                      <link itemprop="availability" href="https://schema.org/OutOfStock"/>
+                      Out of stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/6/6-tm_home_default.jpg" alt="HTC One" title="HTC One" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.38 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $244.25 </span> <span class="price-percent-reduction">-11%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <span class="list-name">HTC One</span> <span class="grid-name">HTC One</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="2"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="Nokia Lumia 1020" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/8/1/81-tm_home_default.jpg" alt="Nokia Lumia 1020" title="Nokia Lumia 1020" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $190.28 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="Nokia Lumia 1020" itemprop="url"> <span class="list-name">Nokia Lumia 1020</span> <span class="grid-name">Nokia Lumia 1020</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="17"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line last-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="NOKIA Lumia 520" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/7/6/76-tm_home_default.jpg" alt="NOKIA Lumia 520" title="NOKIA Lumia 520" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $270.25 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="NOKIA Lumia 520" itemprop="url"> <span class="list-name">NOKIA Lumia 520</span> <span class="grid-name">NOKIA Lumia 520</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="16"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="VU Qi Wireless charging docks" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/6/96-tm_home_default.jpg" alt="VU Qi Wireless charging docks" title="VU Qi Wireless charging docks" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> <a class="sale-box" href="#"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.38 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $244.25 </span> <span class="price-percent-reduction">-11%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="VU Qi Wireless charging docks" itemprop="url"> <span class="list-name">VU Qi Wireless charging docks</span> <span class="grid-name">VU Qi Wireless charging docks</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="20"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-line last-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/1-tm_home_default.jpg" alt="BlackBerry Z30" title="BlackBerry Z30" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $220.96 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <span class="list-name">BlackBerry Z30</span> <span class="grid-name">BlackBerry Z30</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="1"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+              </ul>
+              <ul id="blocknewproducts" class="product_list grid row blocknewproducts tab-pane">
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/1-tm_home_default.jpg" alt="BlackBerry Z30" title="BlackBerry Z30" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $220.96 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <span class="list-name">BlackBerry Z30</span> <span class="grid-name">BlackBerry Z30</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="1"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/6/6-tm_home_default.jpg" alt="HTC One" title="HTC One" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.38 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $244.25 </span> <span class="price-percent-reduction">-11%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <span class="list-name">HTC One</span> <span class="grid-name">HTC One</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="2"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="iPhone 5S" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/2/12-tm_home_default.jpg" alt="iPhone 5S" title="iPhone 5S" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $196.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="iPhone 5S" itemprop="url"> <span class="list-name">iPhone 5S</span> <span class="grid-name">iPhone 5S</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <span class="ajax_add_to_cart_button btn btn-default disabled"> <span>Add to cart</span> </span>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="out-of-stock">
+                      <link itemprop="availability" href="https://schema.org/OutOfStock"/>
+                      Out of stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1" title="LENOVO K900 Steel Gray" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/6/16-tm_home_default.jpg" alt="LENOVO K900 Steel Gray" title="LENOVO K900 Steel Gray" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="new-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1"> <span class="new-label">New!</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $228.96 </span> <span class="price-percent-reduction">-5%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1" title="LENOVO K900 Steel Gray" itemprop="url"> <span class="list-name">LENOVO K900 Steel Gray</span> <span class="grid-name">LENOVO K900 Steel Gray</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="4"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=4&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1" title="Lepow" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/2/1/21-tm_home_default.jpg" alt="Lepow" title="Lepow" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="new-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1"> <span class="new-label">New!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $198.96 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1" title="Lepow" itemprop="url"> <span class="list-name">Lepow</span> <span class="grid-name">Lepow</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="5"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=5&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line last-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1" title="LG announces Wireless Charging Pad" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/2/6/26-tm_home_default.jpg" alt="LG announces Wireless Charging Pad" title="LG announces Wireless Charging Pad" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="new-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1"> <span class="new-label">New!</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $296.20 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $321.96 </span> <span class="price-percent-reduction">-8%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1" title="LG announces Wireless Charging Pad" itemprop="url"> <span class="list-name">LG announces Wireless Charging Pad</span> <span class="grid-name">LG announces Wireless Charging Pad</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="6"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=6&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="LG D802 (Optimus G2)" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/3/1/31-tm_home_default.jpg" alt="LG D802 (Optimus G2)" title="LG D802 (Optimus G2)" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> <a class="new-box" href="#"> <span class="new-label">New!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $177.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="LG D802 (Optimus G2)" itemprop="url"> <span class="list-name">LG D802 (Optimus G2)</span> <span class="grid-name">LG D802 (Optimus G2)</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="7"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-line last-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1" title="LG G2" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/3/6/36-tm_home_default.jpg" alt="LG G2" title="LG G2" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="new-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1"> <span class="new-label">New!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $220.96 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1" title="LG G2" itemprop="url"> <span class="list-name">LG G2</span> <span class="grid-name">LG G2</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="8"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=8&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+              </ul>
+              <ul id="blockbestsellers" class="product_list grid row blockbestsellers tab-pane">
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/1-tm_home_default.jpg" alt="BlackBerry Z30" title="BlackBerry Z30" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $220.96 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="BlackBerry Z30" itemprop="url"> <span class="list-name">BlackBerry Z30</span> <span class="grid-name">BlackBerry Z30</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="1"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=1&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/6/6-tm_home_default.jpg" alt="HTC One" title="HTC One" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.38 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $244.25 </span> <span class="price-percent-reduction">-11%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="HTC One" itemprop="url"> <span class="list-name">HTC One</span> <span class="grid-name">HTC One</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="2"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=2&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="iPhone 5S" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/1/2/12-tm_home_default.jpg" alt="iPhone 5S" title="iPhone 5S" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $196.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="iPhone 5S" itemprop="url"> <span class="list-name">iPhone 5S</span> <span class="grid-name">iPhone 5S</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <span class="ajax_add_to_cart_button btn btn-default disabled"> <span>Add to cart</span> </span>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="out-of-stock">
+                      <link itemprop="availability" href="https://schema.org/OutOfStock"/>
+                      Out of stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="NOKIA Lumia 520" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/7/6/76-tm_home_default.jpg" alt="NOKIA Lumia 520" title="NOKIA Lumia 520" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $270.25 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="NOKIA Lumia 520" itemprop="url"> <span class="list-name">NOKIA Lumia 520</span> <span class="grid-name">NOKIA Lumia 520</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="16"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=16&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line first-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="Nokia Lumia 1020" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/8/1/81-tm_home_default.jpg" alt="Nokia Lumia 1020" title="Nokia Lumia 1020" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $190.28 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="Nokia Lumia 1020" itemprop="url"> <span class="list-name">Nokia Lumia 1020</span> <span class="grid-name">Nokia Lumia 1020</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="17"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=17&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line last-item-of-tablet-line last-item-of-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/0/90-tm_home_default.jpg" alt="Nokia Wireless Charging Cover for Lumia 1020" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="image"/> </a> <a class="quick-view" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" rel="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1"> <span>Quick view</span> </a> <a class="sale-box" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $196.51 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="Nokia Wireless Charging Cover for Lumia 1020" itemprop="url"> <span class="list-name">Nokia Wireless Charging Cover for Lumia 1020</span> <span class="grid-name">Nokia Wireless Charging Cover for Lumia 1020</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="18"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?id_product=18&amp;controller=product&amp;id_lang=1" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="Nokia Wireless Charging Pillow" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/3/93-tm_home_default.jpg" alt="Nokia Wireless Charging Pillow" title="Nokia Wireless Charging Pillow" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price"> $214.25 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                      </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="Nokia Wireless Charging Pillow" itemprop="url"> <span class="list-name">Nokia Wireless Charging Pillow</span> <span class="grid-name">Nokia Wireless Charging Pillow</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="https://livedemo00.template-help.com/prestashop_51309/index.php?controller=cart&amp;add=1&amp;id_product=19&amp;token=eacd2fcb48f0f2d4ea7a9883d7345d5f" rel="nofollow" title="Add to cart" data-id-product="19"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-line last-item-of-mobile-line last-mobile-line">
+                  <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                    <div class="left-block">
+                      <div class="product-image-container"> <a class="product_img_link" href="#" title="VU Qi Wireless charging docks" itemprop="url"> <img class="replace-2x img-responsive" src="https://livedemo00.template-help.com/prestashop_51309/img/p/9/6/96-tm_home_default.jpg" alt="VU Qi Wireless charging docks" title="VU Qi Wireless charging docks" itemprop="image"/> </a> <a class="quick-view" href="#" rel="#"> <span>Quick view</span> </a> <a class="sale-box" href="#"> <span class="sale-label">Sale!</span> </a> </div>
+                    </div>
+                    <div class="right-block">
+                      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="content_price"> <span itemprop="price" class="price product-price product-price-new"> $217.38 </span>
+                        <meta itemprop="priceCurrency" content="USD"/>
+                        <span class="old-price product-price"> $244.25 </span> <span class="price-percent-reduction">-11%</span> </div>
+                      <h5 itemprop="name"> <a class="product-name" href="#" title="VU Qi Wireless charging docks" itemprop="url"> <span class="list-name">VU Qi Wireless charging docks</span> <span class="grid-name">VU Qi Wireless charging docks</span> </a> </h5>
+                      <p class="product-desc" itemprop="description"> <span class="list-desc">We are proud to offer you our hi-tech original goods. The products of our store are the real bestsellers and we have a great number of faithful customers. Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a...</span> <span class="grid-desc">We are proud to offer you our hi-tech...</span> </p>
+                      <div class="button-container"> <a class="ajax_add_to_cart_button btn btn-default" href="#" rel="nofollow" title="Add to cart" data-id-product="20"> <span>Add to cart</span> </a>
+                        <div class="wrap_lnk_view"> <a itemprop="url" class="lnk_view btn btn-default" href="#" title="View"> <span>More</span> </a> </div>
+                      </div>
+                      <div class="product-flags"> <span class="online_only">Online only</span> </div>
+                      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="availability"> <span class="available-now">
+                      <link itemprop="availability" href="https://schema.org/InStock"/>
+                      In Stock </span> </span> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <footer id="footer" class="container">
+      aasdasdsad
+    </footer>
+  </div>
+</div>
+</html>

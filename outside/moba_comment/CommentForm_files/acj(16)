@@ -1,0 +1,16 @@
+OX_8620588243({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"https://monkey-broker-d.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"https://us-u.openx.net/w/1.0/pd?plm=5&ph=9fff3dbe-7c7f-4288-a1ff-97b82f5ecb64",
+    "adunits" : [
+      {
+        "auid":"538381673",
+        "chain_revenue":"",
+        "size":"300x250",
+        "chain":[
+        ]
+      }
+    ]
+  }
+});
