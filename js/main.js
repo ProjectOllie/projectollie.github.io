@@ -6,7 +6,7 @@ function scroll_nav(){
     header_h = $('#Header').height(),
     topMenuHeight = header_h,
     // All list items
-    menuItems = topMenu.find("a"),
+    menuItems = topMenu.find("a:not(.off)"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));

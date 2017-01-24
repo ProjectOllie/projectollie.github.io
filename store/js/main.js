@@ -6,7 +6,7 @@ function scroll_nav(){
     header_h = $('#Header').height(),
     topMenuHeight = header_h,
     // All list items
-    menuItems = topMenu.find("a"),
+    menuItems = topMenu.find("a:not(.off)"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
@@ -26,9 +26,9 @@ function scroll_nav(){
     //Scroll top
     $('#Pagetop a').click(function() {
         var href = $(this).attr("href"),
-          offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+          // offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
         $('html, body').stop().animate({ 
-            scrollTop: offsetTop
+            scrollTop: 0
         }, 800);
     });
 
