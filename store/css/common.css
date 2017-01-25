@@ -290,10 +290,6 @@ img {
 	#Header .navbar-default .navbar-nav > li > a:focus {
 		font-size: 17px;
 	}
-
-	#dLabel {
-		margin-top: 8px;
-	}
 }
 
 @media screen and (max-width: 767px){
