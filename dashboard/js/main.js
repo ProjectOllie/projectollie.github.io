@@ -78,7 +78,12 @@ $(document).ready(function(){
           var video_data = $(this).attr('data-link');
           $(this).parents('body').find('#Stream-video').attr('src', video_data);
         }        
-    });    
+    }); 
+
+    //remove modal content
+    $(document).on("hidden.bs.modal", function (e) {
+        $(e.target).removeData("bs.modal");
+    });   
     
 });
 
