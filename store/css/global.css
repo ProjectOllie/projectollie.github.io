@@ -5370,7 +5370,7 @@ sup, .required {
 }
 #columns .inner_columns {
 	background: white;
-	padding: 0px 20px 30px;
+	/*padding: 0px 20px 30px;*/
 }
 .wrap_top_column #columns .inner_columns {
 	padding-top: 30px;
