@@ -81,8 +81,8 @@ $(document).ready(function(){
     }); 
 
     //remove modal content
-    $(document).on("hidden.bs.modal", function (e) {
-        $(e.target).removeData("bs.modal");
+    $(".bs-modal-streamer").on("hidden.bs.modal", function (e) {
+        $(e.target).find('#Stream-video').attr('src', "");
     });   
     
 });
